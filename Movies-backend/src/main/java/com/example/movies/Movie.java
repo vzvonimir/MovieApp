@@ -28,4 +28,10 @@ public class Movie {
     @DocumentReference
     private List<Review> reviewIds;
 
+    public Movie(ObjectId id, String title, String imdbId) {
+        this.id = id;
+        this.title = title;
+        this.imdbId = imdbId;
+    }
+
 }
